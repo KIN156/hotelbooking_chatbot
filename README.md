@@ -32,10 +32,15 @@ Enter your message in the text input field and click the "Send" button to send i
 
 # Files
 train_chatbot.py: Script to train the chatbot model using the intents defined in intents.json.
+
 chatgui.py: Graphical user interface for interacting with the chatbot.
+
 intents.json: JSON file containing the predefined intents and their corresponding patterns and responses.
+
 words.pkl: Pickle file containing the preprocessed words used in training.
+
 classes.pkl: Pickle file containing the unique classes (intents) used in training.
+
 chatbot_model.h5: Trained chatbot model saved in the Keras HDF5 format.
 
 # Contributing
