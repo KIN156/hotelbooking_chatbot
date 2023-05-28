@@ -1,0 +1,149 @@
+{
+        "intents": [
+          {
+            "tag": "CheckAvailability",
+            "patterns": [
+              "Are there any available rooms for {date}?",
+              "What rooms are available on {date}?",
+              "Check availability for {date}."
+            ],
+            "responses": [
+              "Let me check the availability for you."
+            ],
+            "context": ["availability"]
+          },
+          {
+            "tag": "BookRoom",
+            "patterns": [
+              "I want to book a {room_type} for {date} with {guests} guests.",
+              "Book a {room_type} for {date} with {guests} guests.",
+              "Can I reserve a {room_type} for {date}?"
+            ],
+            "responses": [
+              "Sure! Let me assist you in booking a {room_type} for {date} with {guests} guests."
+            ],
+            "context": ["booking"]
+          },
+          {
+            "tag": "ModifyReservation",
+            "patterns": [
+              "I want to modify my reservation.",
+              "Can I change my reservation?",
+              "Modify my reservation to {new_date}."
+            ],
+            "responses": [
+              "Sure! Let me help you modify your reservation."
+            ],
+            "context": ["booking"]
+          },
+          {
+            "tag": "CancelReservation",
+            "patterns": [
+              "I want to cancel my reservation.",
+              "Can I cancel my booking?",
+              "Cancel my reservation for {date}."
+            ],
+            "responses": [
+              "I'm sorry to hear that. Let me assist you with canceling your reservation."
+            ],
+            "context": ["booking"]
+          },
+          {
+            "tag": "GetPricingInformation",
+            "patterns": [
+              "What is the price for a {room_type} on {date}?",
+              "How much does it cost to book a {room_type}?",
+              "Are there any special offers or discounts?"
+            ],
+            "responses": [
+              "The price for a {room_type} on {date} is {price}. We also have special offers and discounts available."
+            ],
+            "context": ["pricing"]
+          },
+          {
+            "tag": "AskAboutAmenities",
+            "patterns": [
+              "What amenities are available at the hotel?",
+              "Does the hotel have Wi-Fi?",
+              "Is there a gym or pool?"
+            ],
+            "responses": [
+              "Our hotel offers various amenities including Wi-Fi, gym, and pool."
+            ],
+            "context": ["amenities"]
+          },
+          {
+            "tag": "AskAboutNearbyAttractions",
+            "patterns": [
+              "What are some nearby attractions?",
+              "Tell me about local attractions.",
+              "Are there any good restaurants nearby?"
+            ],
+            "responses": [
+              "There are several nearby attractions including museums, parks, and restaurants. How can I assist you further?"
+            ],
+            "context": ["attractions"]
+          },
+          {
+            "tag": "GetDirections",
+            "patterns": [
+              "How do I get to the hotel from {location}?",
+              "What is the nearest airport/train station?",
+              "Are there public transportation options?"
+            ],
+            "responses": [
+              "To get to the hotel from {location}, you can {directions}. The nearest airport is {airport} and the nearest train station is {train_station}. We also have public transportation options available."
+            ],
+            "context": ["directions"]
+          },
+          {
+            "tag": "RequestSpecialAccommodations",
+            "patterns": [
+              "I need an accessible room.",
+              "Can I request an extra bed?",
+              "Do you provide cribs?"
+            ],
+            "responses": [
+              "Certainly! We provide accessible rooms, extra beds, and cribs upon request. Please let us know your specific requirements."
+            ],
+            "context": ["special_accommodations"]
+          },
+          {
+            "tag": "ProvideFeedback",
+            "patterns": [
+              "I want to provide feedback about my stay.",
+              "I have a complaint to make.",
+              "Can I leave a review?"
+            ],
+            "responses": [
+              "We appreciate your feedback. Please share your experience and any concerns you have, and we will address them accordingly."
+            ],
+            "context": ["feedback"]
+          },
+          {
+            "tag": "AskAboutHotelPolicies",
+            "patterns": [
+              "What are the check-in and check-out times?",
+              "What is the pet policy?",
+              "Is smoking allowed?"
+            ],
+            "responses": [
+              "Our check-in time is {check_in_time} and check-out time is {check_out_time}. We have specific policies regarding pets and smoking which you can find on our website or by contacting our staff."
+            ],
+            "context": ["policies"]
+          },
+          {
+            "tag": "AskForContactInformation",
+            "patterns": [
+              "What is the hotel's phone number?",
+              "Can you provide the email address?",
+              "How can I contact the hotel?"
+            ],
+            "responses": [
+              "You can contact our hotel at {phone_number} or reach us via email at {email_address}. We are available to assist you."
+            ],
+            "context": ["contact_information"]
+          }
+        ]
+      }
+      
